@@ -1,0 +1,70 @@
+.topview{
+	width: 750rpx;
+	height: 248rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+}
+.bottomvoew{
+	width: 750rpx;
+	height: 130rpx;
+	background: rgba(255,255,255,1);
+	position: fixed;
+	bottom: 100rpx;
+	left: 0rpx;
+}
+page{
+	background-color: #F7F6FA;
+}
+.tosub{
+	width: 235rpx;
+	height: 77rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+	text-align: center;
+	color: white;
+	border-radius: 100rpx;
+	line-height: 77rpx;
+}
+.hejis{
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 30rpx;
+	color: #222222;
+	line-height: 62rpx;
+}
+.goodviwe{
+	width: 710rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 22rpx;
+	margin:-80rpx 20rpx 20rpx 20rpx;
+}
+.goodname{
+	width: 374rpx;
+	height: 73rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 26rpx;
+	color: #262626;
+	line-height: 36rpx;
+}
+
+.spaceview{
+	height: 37rpx;
+	font-size: 27rpx;
+	background: rgba(230,230,230,1);
+	padding:0rpx 10rpx;
+	border-radius: 10rpx;
+}
+.countviiew{
+	width: 177rpx;
+	height: 46rpx;
+	background: rgba(255,255,255,0.39);
+	border-radius: 9rpx;
+	border: 2px solid #DEDEDE;
+}
+.jiajianbtn{
+	width: 42rpx;
+	height: 36rpx;
+	background: rgba(246,247,249,1);
+	border-radius: 9rpx 0rpx 0rpx 9rpx;
+	text-align: center;
+	line-height: 36rpx;
+}

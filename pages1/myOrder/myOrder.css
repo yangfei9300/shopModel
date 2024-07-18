@@ -1,0 +1,107 @@
+.toptype{
+	width: 750rpx;
+	height: 78rpx;
+	background: rgba(255,255,255,1);
+}
+page{
+	background-color: #F7F6FA;
+}
+.hxian{
+	width: 84rpx;
+	height: 4rpx;
+	background-color: #F83D47;
+	position: absolute;
+	bottom: 0rpx;
+	
+}
+.orderitemview{
+	width: 702rpx;
+	/* height: 378rpx; */
+	background: rgba(255,255,255,1);
+	box-shadow: 0rpx 0rpx 20rpx rgba(223,223,223,1);
+	border-radius: 20rpx;
+	margin:24rpx;
+}
+.goodimg{
+	width: 160rpx;
+	height: 160rpx;
+	background: rgba(238,238,238,1);
+}
+.goodname{
+	width: 288rpx;
+	height: 63rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #333333;
+	line-height: 30rpx;
+}
+.spacename{
+	color: #999999;
+	font-size: 30rpx;
+}
+.tomoney{
+	width: 150rpx;
+	height: 54rpx;
+	background: rgba(248,61,71,1);
+	border-radius: 27rpx;
+	text-align: center;
+	line-height: 54rpx;
+	font-size: 30rpx;
+	color: white;
+	margin-left: 20rpx;
+}
+.quxiaoorder{
+	height: 54rpx;
+	border-radius: 27rpx;
+	border: 1px solid #E81249;
+	padding:0rpx 20rpx;
+	color: #F83D47;
+	line-height: 50rpx;
+	margin-left: 20rpx;
+}
+
+.shouhuoalerr{
+	width: 542rpx;
+	height: 452rpx;
+	background: rgba(253,252,255,1);
+	border-radius: 10rpx;
+	padding:43rpx;
+}
+.alerttitle{
+	height: 50rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 36rpx;
+	color: #333333;
+	line-height: 50rpx;
+}
+.alerttxt{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #333333;
+	line-height: 41rpx;
+}
+.subtruebtm{
+	width: 200rpx;
+	height: 60rpx;
+	background: rgba(248,61,71,1);
+	border-radius: 30rpx;
+	text-align: center;
+	line-height: 60rpx;
+	color: white;
+	font-size: 27rpx;
+}
+.quxiaoaa{
+	width: 200rpx;
+	height: 60rpx;
+	border-radius: 30rpx;
+	border: 1px solid #F83D47;
+	
+	border-radius: 30rpx;
+	text-align: center;
+	line-height: 60rpx;
+	color: #F83D47;
+	font-size: 27rpx;
+}

@@ -1,0 +1,65 @@
+page{
+	background-color: #F6F7FA;
+}
+.topview{
+	width: 750rpx;
+	height: 600rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+}
+.jine{
+	height: 84rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 60rpx;
+	color: #FFFFFF;
+	line-height: 72rpx;
+}
+.jieshi{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 28rpx;
+	color: #FFFFFF;
+	line-height: 34rpx;
+}
+.bottomlist{
+	width: 710rpx;
+	height:80vh;
+	background: rgba(255,255,255,1);
+	border-radius: 20rpx 20rpx 0rpx 0rpx;
+	position: fixed;
+	bottom: 0rpx;
+	left: 20rpx;
+	padding-top: 40rpx;
+	padding-left:30rpx;
+}
+.useritem{
+	width: 650rpx;
+	height: 160rpx;
+	background: rgba(255,255,255,0.39);
+	border-radius: 20rpx;
+	border: 1px solid #EEEEEE;
+}
+.nichengs{
+	height: 40rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 28rpx;
+	color: #333333;
+	line-height: 44rpx;
+}
+.dinghuo{
+	height: 33rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #999999;
+	line-height: 44rpx;
+}
+.jinee{
+	height: 33rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #F83D47;
+	line-height: 44rpx;
+}

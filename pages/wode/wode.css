@@ -1,0 +1,56 @@
+page{
+	background-color: #F5F5F5;
+}
+.topview{
+	width: 750rpx;
+	height: 496rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+}
+.logintxt{
+	height: 50rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 36rpx;
+	color: #FFFFFF;
+	line-height: 50rpx;
+}
+.loginjiehs{
+	height: 40rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 28rpx;
+	color: #FFFFFF;
+	line-height: 40rpx;
+	opacity: 0.7;
+}
+.myorderview{
+	width: 710rpx;
+	height: 250rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 20rpx;
+	padding:24rpx 26rpx;
+	margin:20rpx;
+}
+.cygoview{
+	width: 710rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 20rpx;
+	padding:24rpx 26rpx;
+	margin:20rpx;
+}
+.chyff{
+	height: 48rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 34rpx;
+	color: #000000;
+	line-height: 48rpx;
+}
+.memnutxt{
+	height: 33rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #828281;
+	line-height: 6rpx;
+}

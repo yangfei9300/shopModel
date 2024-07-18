@@ -1,0 +1,10 @@
+.subbtn{
+	width: 630rpx;
+	height: 100rpx;
+	background: rgba(248,61,71,1);
+	border-radius: 50rpx;
+	text-align: center;
+	line-height: 100rpx;
+	color: white;
+	margin-top: 100rpx;
+}

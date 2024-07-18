@@ -1,0 +1,21 @@
+page{
+	background-color: #F7F6FA;
+}
+.titlee{
+	font-weight: bold;
+	color: white;
+	font-size: 50rpx;
+	margin-top: 40rpx;
+	margin-left: 40rpx;
+}
+.sousuo{
+	width: 710rpx;
+	height: 66rpx;
+	background: rgba(241,241,241,1);
+	border-radius: 33rpx;
+	margin:20rpx;
+}
+.swipee{
+	margin:20rpx;
+	margin-top: -180rpx;
+}

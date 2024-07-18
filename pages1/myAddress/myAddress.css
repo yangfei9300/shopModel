@@ -1,0 +1,44 @@
+.item{
+	width: 710rpx;
+	background: rgba(255,255,255,0.39);
+	box-shadow: 0rpx 0rpx 20rpx rgba(153,153,153,0.2);
+	border-radius: 20rpx;
+	padding:26rpx 32rpx;
+	margin:20rpx  20rpx 0rpx 20rpx;
+}
+.phonee{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #999999;
+	line-height: 42rpx;
+}
+.infoview{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 26rpx;
+	color: #333333;
+	line-height: 36rpx;
+}
+.moren{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 26rpx;
+	color: #999999;
+	line-height: 36rpx;
+}
+.claosd{
+	color: #E12626;
+}
+.tosubbtn{
+	width: 630rpx;
+	height: 100rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+	border-radius: 50rpx;
+	position: fixed;
+	left: 60rpx;
+	bottom: 120rpx;
+	text-align: center;
+	line-height: 100rpx;
+	color: white;
+}

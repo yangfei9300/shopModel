@@ -1,0 +1,81 @@
+page{
+	background-color: #FAF8F8;
+}
+.rechange{
+	width: 690rpx;
+	height: 514rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 20rpx;
+	padding:32rpx 21rpx;
+	margin:30rpx;
+}
+.submit{
+	width: 630rpx;
+	height: 90rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+	border-radius: 50rpx;
+	text-align: center;
+	line-height: 90rpx;
+	color: white;
+	margin-top: 20rpx;
+}
+.noselmoneview{
+	width: 194rpx;
+	height: 192rpx;
+	background: rgba(255,255,255,0.39);
+	border-radius: 20rpx;
+	border: 2px solid #DDDDDD;
+}
+.selmoneview{
+	width: 194rpx;
+	height: 192rpx;
+	background: linear-gradient(180deg, #FD4449 0%, #EE2E43 100%);
+	border-radius: 20rpx;
+	border: 2px solid #DDDDDD;
+	color: white;
+}
+.moneytxt{
+	font-weight: bold;
+	font-size: 40rpx;
+}
+
+
+.logintxt{
+	height: 50rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 36rpx;
+	color: #FFFFFF;
+	line-height: 50rpx;
+}
+.loginjiehs{
+	height: 40rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 28rpx;
+	color: #FFFFFF;
+	line-height: 40rpx;
+	opacity: 0.7;
+}
+.vipjieshi{
+	width: 690rpx;
+	height: 190rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 20rpx;
+	margin:30rpx  ;	font-size: 28rpx;
+	color: #FFFFFF;
+	line-height: 40rpx;
+	padding:32rpx 21rpx;
+	margin-top: -190rpx;
+	z-index: 2000;
+}
+
+.jieshi{
+	
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 28rpx;
+	color: #F83D47;
+	line-height: 43rpx;
+
+}

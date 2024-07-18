@@ -1,0 +1,25 @@
+.btntoxaom{
+	width: 650rpx;
+	height: 98rpx;
+	background: rgba(248,61,71,1);
+	border-radius: 100rpx;
+	text-align: center;
+	line-height: 98rpx;
+	color: white;
+	font-weight: 700;
+}
+.paytypeview{
+	height: 70rpx;
+	background: rgba(255,255,255,0.39);
+	border-radius: 10rpx;
+	border: 2px solid #678DFF;
+	padding:0rpx 30rpx;
+}
+
+.noselmoneview{
+	height: 70rpx;
+	background: rgba(255,255,255,0.39);
+	border-radius: 10rpx;
+	border: 2px solid #D8D8D8;
+	padding:0rpx 30rpx;
+}
