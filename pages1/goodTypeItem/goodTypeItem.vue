@@ -10,16 +10,37 @@
 			<view v-if="type==2" class="seltxt">最新</view>
 			<view v-else  @click.stop="typeClick(2)" >最新</view>
 			
-			<view class="roww center_center">
+			<view class="roww center_center" v-if="type==3" 
+			@click.stop="typeClick(4)">
 				<view v-if="type==3" class="seltxt">价格</view>
-				<view v-else  @click.stop="typeClick(3)" >价格</view>
+				<view v-else   >价格</view>
+				<view class="w-10"></view>
+				<image src="/static/bottom@2x.png" 
+				class="w-24 h-32"></image>
+			</view>
+			<view class="roww center_center"
+			  v-else-if="type==4" 
+			 @click.stop="typeClick(3)">
+				<view v-if="type==4" class="seltxt">价格</view>
+				<view v-else   >价格</view>
+				<view class="w-10"></view>
+				<image src="/static/top@2x.png" 
+				class="w-24 h-32"></image>
+			</view>
+			<view class="roww center_center"
+			  v-else
+			 @click.stop="typeClick(4)">
+				<view    >价格</view>
 				<view class="w-10"></view>
 				<image src="/static/bottom@2x.png" 
 				class="w-24 h-32"></image>
 			</view>
 		</view>
 		<view class="colonn p-all-20">
-			<goodItem v-for="(item,index) in 30"></goodItem>
+			<block v-for="(item,index) in goodList">
+				<goodItem :info="item"
+				></goodItem> 
+			</block>
 			<view class="h-20"></view>
 		</view>
 	</view>
@@ -30,12 +51,36 @@
 		data() {
 			return {
 				type:1,
+				options:{},
+				goodList:[]
 			}
+		},
+		onLoad(options) {
+			this.options=options;
+			this.getGoodList();
 		},
 		methods: {
 			typeClick(index){
 				this.type=index;
-			}
+				this.getGoodList();
+			},
+			getGoodList(){
+				var data = {
+					'deptId':getApp().globalData.deptId,
+					'categoryId':this.options.id
+				};
+					data.params={
+						'sel':this.type
+					}
+				this.$axios
+					.axios('POST', this.$paths.getGoodList, data)
+					.then(res => {
+						this.goodList=res.data;
+					})
+					.catch(err => {
+						console.log('错误回调', err);
+					});
+			},
 		}
 	}
 </script>

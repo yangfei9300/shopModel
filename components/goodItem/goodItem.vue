@@ -3,15 +3,16 @@
 		<view class="roww p-all-20 background1 br-20 m-top-20"
 		@click.stop="toInfo"
 		>
-			<image src="./1721204363032.jpg" 
+			<image 
+			:src="BASE_IMG+info.img" 
 			class="w-200 h-200 br-20"></image>
 			<view class="w-20"></view>
 			<view class="colonn rowsb">
-				<view class="tite txtShowLength1">2021秋冬季新款儿童羽绒大D黄蜂折扣 童装批发走份2021秋冬季新款儿童羽绒大D黄蜂折扣 童装批发走份 ...</view>
+				<view class="tite txtShowLength1">{{info.name}}</view>
 				<view class="roww  ">
-					<view class="price">优惠价：￥2929元</view>
+					<view class="price">优惠价：￥{{info.preferentialPrice}}元</view>
 					<view class="allline"></view>
-					<view class="lucun">库存：800</view>  
+					<view class="lucun">库存：{{info.id}}</view>  
 				</view>
 			</view>
 		</view>
@@ -21,13 +22,24 @@
 <script>
 export default {
 	name: 'goodItem',
+	props:{
+		info:{
+			type:Object,
+			value:null
+		}
+	},
 	data() {
-		return {};
+		return {
+			BASE_IMG:"",
+		};
+	},
+	created() {
+		this.BASE_IMG=this.$paths.BASE_IMG
 	},
 	methods:{
 		toInfo(){
 			uni.navigateTo({
-				url:"/pages2/goodInfo/goodInfo"
+				url:"/pages2/goodInfo/goodInfo?id="+this.info.id
 			})
 		}
 	}

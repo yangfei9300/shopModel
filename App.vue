@@ -1,7 +1,7 @@
 <script>
 	export default {
 		globalData:{
-			activityId:5,
+			'deptId':'205',
 		},
 		onLoad() {  
 		},

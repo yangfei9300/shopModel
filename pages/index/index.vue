@@ -3,7 +3,7 @@
 		<view class="colonn w-750 h-422 pore">
 			<image src="/static/tioimg.png" class="w-750"></image>
 			<view class="colonn poab" style="top: 0rpx;" >
-				<view class="titlee">想到商城</view>
+				<view class="titlee">{{shopInfo.shopName}}</view>
 				<view class="h-25"></view>
 				<view class="roww">
 					<view class="sousuo roww center_center">
@@ -15,9 +15,9 @@
 			</view>
 		</view>
 		<swiper class="w-710 swipee h-240">
-			<swiper-item  class="w-710 h-240">
-				<image src="/static/banner@2x.png" 
-				 class="w-710 h-240"> </image>
+			<swiper-item v-for="(item,index) in banners"  class="w-710 h-240">
+				<image :src="BASE_IMG+item.img"  mode="aspectFill"
+				 class="w-710 br-10 h-240"> </image>
 			</swiper-item>
 		</swiper>
 		<view class="h-15"></view>
@@ -25,21 +25,28 @@
 		style="background-color: white;">
 			<view class="colonn center_center m-top-20" 
 			style="width: 177.5rpx;" 
-			v-for="(item,index) in 8">
-				<image src="/static/imgone@2x.png" class="w-110 h-110"></image>
+			v-for="(item,index) in goodType"
+			@click.stop="goodTypeItem(item)"
+			>
+				<image :src="BASE_IMG+item.typeImg" class="w-110 br-20 h-110"></image>
 				<view class="h-10"></view>
-				<view>上衣</view>
+				<view class="txtShowLength w-110">{{item.typeName}}</view>
 			</view>
 		</view>
 		<view class="colonn p-all-20">
 			<view class="fw-600">极速推荐</view>
 			<view class="colonn ">
-				<goodItem v-for="(item,index) in 5"
+				<block v-for="(item,index) in goodTypeList">
+					<goodItem :info="item"
+					></goodItem> 
+				</block>
 				
-				></goodItem> 
 			</view>
 			
 		</view>
+		
+		<view @click="toLing">去领取优惠券</view>
+		
 	</view>
 </template>
 
@@ -47,13 +54,86 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				goodTypeList:[],
+				BASE_IMG:"",
+				goodType:[],
+				banners:[],
+				shopInfo:{},
 			}
 		},
 		onLoad() {
-
+			this.getRecommendList();
+			this.getType();
+			this.getBanners();
+			this.getShopInfo();
+			this.BASE_IMG=this.$paths.BASE_IMG
 		},
 		methods: {
+			getShopInfo(){
+				var data = {
+					'deptId':getApp().globalData.deptId
+				};
+				this.$axios
+					.axios('POST', this.$paths.getShopInfo, data)
+					.then(res => {
+						this.shopInfo=res.data;
+					})
+					.catch(err => {
+						console.log('错误回调', err);
+					});
+			},
+			goodTypeItem(item){
+				uni.navigateTo({
+					url:"/pages1/goodTypeItem/goodTypeItem?id="+item.id
+				})
+			},
+			toLing(){
+				uni.navigateTo({
+					url:"/pages2/lingCOupons/lingCOupons"
+				})
+			},
+			// 获取轮播图
+			getBanners(){
+				var data = {
+					'deptId':getApp().globalData.deptId
+				};
+				this.$axios
+					.axios('POST', this.$paths.getBanners, data)
+					.then(res => {
+						this.banners=res.data;
+					})
+					.catch(err => {
+						console.log('错误回调', err);
+					});
+			},
+			// 获取分类
+			getType(){
+				var data = {
+					'deptId':getApp().globalData.deptId
+				};
+				this.$axios
+					.axios('POST', this.$paths.getGoodTypes, data)
+					.then(res => {
+						this.goodType=res.data;
+					})
+					.catch(err => {
+						console.log('错误回调', err);
+					});
+			},
+			// 获取推荐的商品
+			getRecommendList(){
+				var data = {
+					'deptId':getApp().globalData.deptId
+				};
+				this.$axios
+					.axios('POST', this.$paths.getRecommendList, data)
+					.then(res => {
+						this.goodTypeList=res.data;
+					})
+					.catch(err => {
+						console.log('错误回调', err);
+					});
+			},
 			toInfo(){
 				uni.navigateTo({
 					url:"/pages2/goodInfo/goodInfo"

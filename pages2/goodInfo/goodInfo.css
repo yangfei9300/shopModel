@@ -32,7 +32,7 @@ page{
 }
 .goodname{
 	width: 459rpx;
-	height: 95rpx;
+	/* height: 95rpx; */
 	font-family: PingFang SC;
 	font-weight: bold;
 	font-size: 32rpx;

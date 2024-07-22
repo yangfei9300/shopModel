@@ -1,0 +1,52 @@
+page{
+	width: 750rpx;
+	height: 100vh;
+	background: linear-gradient(0deg, #FF4425, #FF6D38);
+}
+
+.couview{
+	width: 700rpx;
+	height: 170rpx;
+	background: #FFFFFF;
+	box-shadow: 0rpx 0rpx 9rpx 1rpx rgba(153,153,153,0.2);
+	border-radius: 10rpx;
+	margin:25rpx 25rpx 0rpx 25rpx;
+}
+.leftvuew{
+	width: 190rpx;
+	height: 170rpx;
+	color: white;
+	background: linear-gradient(90deg, #FF5044 0%, #E60121 100%);
+	border-radius: 10rpx 0rpx 0rpx 10rpx;
+	margin-right: 20rpx;
+}
+.leftvuewhui{
+	width: 190rpx;
+	height: 170rpx;
+	color: white;
+	background: linear-gradient(90deg, #D6D6D6 0%,#D6D6D6 100%);
+	border-radius: 10rpx 0rpx 0rpx 10rpx;
+	margin-right: 20rpx;
+}
+
+
+.righttext{
+	height: 42rpx;
+	font-family: PingFang SC;
+	font-weight: 500;
+	font-size: 27rpx;
+	color: #333333;
+	line-height: 42rpx;
+}
+.rightline{
+	width: 470rpx;
+	height: 3rpx;
+	background: #EEEEEE;
+}
+.rightbottom{
+	height: 23rpx;
+	font-family: PingFang SC;
+	font-weight: 500;
+	font-size: 24rpx;
+	color: #999999;
+}

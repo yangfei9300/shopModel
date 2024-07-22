@@ -159,7 +159,39 @@
 				"navigationBarTitleText" : "招募合伙人",
 				"enablePullDownRefresh" : false
 			}
+		},{
+			"path" : "pages2/myCoupon/myCoupon",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的优惠券",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages2/lingCOupons/lingCOupons",
+			"style" : 
+			{
+				"navigationBarTitleText" : "领取优惠券"
+			}
+		},
+		{
+			"path" : "pages3/returnOrder/returnOrder",
+			"style" : 
+			{
+				"navigationBarTitleText" : "退款",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages3/kefu/kefu",
+			"style" : 
+			{
+				"navigationBarTitleText" : "客服列表",
+				"enablePullDownRefresh" : false
+			}
 		}
+		
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -1,0 +1,47 @@
+
+.goodimg{
+	width: 160rpx;
+	height: 160rpx;
+	background: rgba(238,238,238,1);
+}
+.goodname{
+	width: 288rpx;
+	height: 63rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 24rpx;
+	color: #333333;
+	line-height: 30rpx;
+}
+.spacename{
+	color: #999999;
+	font-size: 30rpx;
+}
+.tomoney{
+	width: 150rpx;
+	height: 54rpx;
+	background: rgba(248,61,71,1);
+	border-radius: 27rpx;
+	text-align: center;
+	line-height: 54rpx;
+	font-size: 30rpx;
+	color: white;
+	margin-left: 20rpx;
+	font-size: 27rpx;
+}
+.bottomview{
+	width: 664rpx;
+	background: #F8F8F8;
+	min-height: 300rpx;
+}
+.subbtn{
+	width: 600rpx;
+	height: 90rpx;
+	background: linear-gradient(90deg, #FF5044, #E60121);
+	box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(254,76,66,0.56);
+	border-radius: 45rpx;
+	text-align: center;
+	line-height: 90rpx;
+	color: white;
+	margin-top: 20rpx;
+}

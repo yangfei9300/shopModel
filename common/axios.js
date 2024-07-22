@@ -50,5 +50,21 @@ export default{
 			})
 		})
 	},
+	axiosUpload(url, imgurl, data) {
+			return new Promise((resolve, reject) => {
+				uni.uploadFile({
+					url: url, //仅为示例，非真实的接口地址
+					filePath: imgurl,
+					name: 'file',
+					header: {},
+					formData: data,
+					success: (uploadFileRes) => {
+						var res = JSON.parse(uploadFileRes.data)
+						resolve(res)
+					}
+				});
+	
+			})
+		},
 }
   
