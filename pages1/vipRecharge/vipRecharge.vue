@@ -7,11 +7,13 @@
 			<view class="colonn poab" style="top: 0rpx;z-index: 11;" >
 				<view class="h-50"></view>
 				<view class="roww" style="padding:25rpx 36rpx;">
-					<image src="/static/wd_gr@2x.png" class="w-132 h-132"></image>
+					<image :src="BASE_IMG+userInfo.avatar" 
+					style="border-radius: 50%;"
+					class="w-132 h-132"></image>
 					<view class="w-30"></view>
 					<view class="colonn h-132 rowsa">
-						<view class="logintxt">童品直采</view>
-						<view class="loginjiehs">2020-05-05到期</view>
+						<view class="logintxt">{{userInfo.nickName}}</view>
+						<view class="loginjiehs">实现您的买买买的痛快</view>
 					</view>
 				</view>
 			</view>
@@ -93,9 +95,11 @@
 				form:{
 					'money':20
 				},
+				BASE_IMG:''
 			}
 		},
 		onLoad() {
+			this.BASE_IMG=this.$paths.BASE_IMG;
 			var userInfo=uni.getStorageSync("userInfo");
 			if(userInfo){
 				this.userInfo=userInfo;

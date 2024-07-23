@@ -69,7 +69,10 @@
 					</view>
 					
 				</block>
-				
+				<view class="colonn">
+					<null v-if="coupoinList.length<=0"></null>
+					<view class="h-250"></view>
+				</view>
 				<!-- <view class="couview roww" >
 					<view class="leftvuewhui colonn center_center">
 						<view class="roww bottom">

@@ -19,3 +19,88 @@ page{
 	margin:20rpx;
 	margin-top: -180rpx;
 }
+
+
+
+.coupninfo{
+	width: 610rpx;
+	background: linear-gradient(180deg, #F55747 0%, #EA2467 100%);
+	border-radius: 20rpx;
+}
+.gongxihd{
+	height: 50rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 36rpx;
+	color: #FFFFFF;
+	line-height: 63rpx;
+}
+.chaozyhq{
+	height: 48rpx;
+	font-family: SourceHanSansCN-Bold;
+	font-size: 48rpx;
+	color: #FFFFFF;
+	line-height: 84rpx;
+}
+.coupinview{
+	width: 559rpx;
+	height: 160rpx;
+	margin-left: 25rpx;
+	background: rgba(255,255,255,1);
+	border-radius: 15rpx;
+	margin-bottom: 20rpx;
+}
+.righttxt{
+	width: 312rpx;
+	height: 69rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 24rpx;
+	color: #333333;
+	line-height: 36rpx;
+}
+.youxiaoqi{
+	font-family: PingFang SC;
+	font-weight: 400;
+	font-size: 20rpx;
+	color: #999999;
+	line-height: 30rpx;
+}
+.yuan1{
+	width: 30rpx;
+	height:30rpx;
+	border-radius: 50%;
+	position: relative;
+	top: -15rpx;
+	background: linear-gradient(180deg, #F55747 0%, #EA2467 100%);
+}
+.alertbottom{
+	width: 610rpx;
+	height: 155rpx;
+	background: rgba(234,36,102,1);
+	/* box-shadow: 0rpx -2rpx 6rpx rgba(248,63,111,1); */
+	border-radius: 50% 50% 0% 0%;
+	position: relative;
+	top: -70rpx;
+}
+.bottombtn{
+	width: 400rpx;
+	height: 80rpx;
+	background: linear-gradient(360deg, #F5B21B 0%, #FCDA77 100%);
+	border-radius: 40rpx;
+	
+	font-family: PingFang SC;
+	font-weight: bold;
+	font-size: 40rpx;
+	color: #A70101;
+	line-height: 40rpx;
+	text-align: center;
+	line-height: 80rpx;
+	margin-top: 70rpx;
+}
+.guanbis{
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	margin-top: 20rpx;
+}

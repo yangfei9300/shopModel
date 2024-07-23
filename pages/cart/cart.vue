@@ -2,7 +2,7 @@
 	<view>
 		<view class="topview colonn">
 			<view class="roww fs-27 p-all-30" style="color: white">
-				<view>重盈服饰</view>
+				<view>{{shopInfo.shopName}}</view>
 				<view class="allline"></view>
 				<view @click.stop="delcartd">删除</view>
 			</view>
@@ -51,6 +51,12 @@
 					</view>
 				</view>
 			</view>
+			<view class="colonn">
+				<null v-if="mycarts.length<=0"></null>
+				<view class="h-250"></view>
+			</view>
+			
+			
 		</view>
 			<view class="h-150"></view>
 
@@ -85,13 +91,28 @@ export default {
 			BASE_IMG:"",
 			totalMoney:0,
 			isAll:false,
+			shopInfo:{}
 		};
 	},
 	onShow() {
 		this.getCart();
+		this.getShopInfo();
 		this.BASE_IMG=this.$paths.BASE_IMG;
 	},
 	methods: {
+		getShopInfo(){
+			var data = {
+				'deptId':getApp().globalData.deptId
+			};
+			this.$axios
+				.axios('POST', this.$paths.getShopInfo, data)
+				.then(res => {
+					this.shopInfo=res.data;
+				})
+				.catch(err => {
+					console.log('错误回调', err);
+				});
+		},
 		delcartd(){
 			var ids=[];
 			for(var a=0;a<this.mycarts.length;a++){

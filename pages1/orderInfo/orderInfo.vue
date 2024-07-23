@@ -129,7 +129,7 @@
 			<view class="w-20"></view>、
 			 -->
 
-			<view class="quxiaoorder" v-if="orderInfo.status == 2" @click="toRerturn(orderInfo)">退款</view>
+			<view class="quxiaoorder" v-if="orderInfo.status == 2" @click="toreturn(orderInfo)">退款</view>
 
 			<view class="tomoney" v-if="orderInfo.status == 1">去付款</view>
 			<view class="tomoney" @click.stop="confirmOrder(orderInfo, 5)" v-if="orderInfo.status == 3">确认收货</view>
@@ -153,6 +153,12 @@ export default {
 		this.getOrderInfo(options);
 	},
 	methods: {
+		toreturn(item){
+			uni.setStorageSync("orderInfo",item);
+			uni.navigateTo({
+				url:"/pages3/returnOrder/returnOrder"
+			})
+		},
 		//确定订单
 		confirmOrder(item, status) {
 			var data = {

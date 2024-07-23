@@ -42,6 +42,7 @@
 				></goodItem> 
 			</block>
 			<view class="h-20"></view>
+			<null v-if="goodList.length<=0"></null>
 		</view>
 	</view>
 </template>

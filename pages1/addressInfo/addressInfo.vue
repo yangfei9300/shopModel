@@ -126,6 +126,11 @@
 							if(data.isDefault=='1'&&!data.id){
 								uni.setStorageSync("morenId",res.data)
 							}
+							setTimeout(res=>{
+								uni.navigateBack({
+									delta:1
+								})
+							},1000)
 						}else{
 							this.$tools.showToast(res.msg);
 						}

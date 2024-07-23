@@ -189,6 +189,38 @@
 				"navigationBarTitleText" : "客服列表",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "pages3/sousuo/sousuo",
+			"style" : 
+			{
+				"navigationBarTitleText" : "搜索",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages3/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages3/register/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "注册",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages3/updatePwd/updatePwd",
+			"style" : 
+			{
+				"navigationBarTitleText" : "修改密码",
+				"enablePullDownRefresh" : false
+			}
 		}
 		
 		

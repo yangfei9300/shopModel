@@ -15,6 +15,13 @@
 					</view>
 				</view>
 			</view>
+			
+			
+			<view class="colonn" >
+				<null v-if="kefuList.length<=0"></null>
+				<view class="h-250"></view>
+			</view>
+			
 		</view>
 	</view>
 </template>

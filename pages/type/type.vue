@@ -52,8 +52,9 @@
 					<goodItem :info="item"
 					></goodItem> 
 				</block>
-				<view class="roww p-all-20 center_center" v-if="goodList.length<=0">
-					<view>暂无商品</view>
+				<view class="roww p-all-20 center_center" 
+				v-if="goodList.length<=0">
+					<null v-if="goodList.length<=0"></null>
 				</view>
 			</view>
 			<view class="h-20"></view>

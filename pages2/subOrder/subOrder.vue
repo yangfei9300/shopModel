@@ -153,7 +153,7 @@
 				}
 				var data={
 					'uId':uni.getStorageSync("userInfo").id,
-					'addressId':uni.getStorageSync("address").id,
+					'addressId':uni.getStorageSync("addressInfoSel").id,
 					'address':addressInfo.province+' '+addressInfo.city+' '+addressInfo.area,
 					'addressName':addressInfo.name,
 					'addressPhone':addressInfo.phone,

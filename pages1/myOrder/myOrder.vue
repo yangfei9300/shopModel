@@ -14,7 +14,8 @@
 			</view>
 		</view>
 <view class="h-80"></view>
-		<view class="orderitemview colonn" v-for="(item, index) in orderList"
+		<view class="orderitemview colonn" 
+		v-for="(item, index) in orderList"
 		
 		>
 			<view v-for="(item1,index1) in item.orderItems" class="roww border_bottom p-bottom-20"
@@ -80,6 +81,12 @@
 				<view class="tomoney"@click.stop="orderInfoTo(item)">查看详情</view>
 			</view>
 		</view>
+		
+		<view class="colonn">
+			<null v-if="orderList.length<=0"></null>
+			<view class="h-250"></view>
+		</view>
+		
 
 		<view class="huuibeijing colonn center_center" v-if="alert">
 			<view class="shouhuoalerr colonn center_center">

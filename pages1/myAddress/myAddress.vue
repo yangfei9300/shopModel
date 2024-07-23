@@ -25,6 +25,12 @@
 					<view class="fs-27 claosd" @click.stop="toalert(item)">删除</view>
 				</view>
 			</view>
+			
+			<view class="colonn" >
+				<null v-if="addressList.length<=0"></null>
+				<view class="h-250"></view>
+			</view>
+			
 		</view>
 		<view class="h-220"></view>
 		<view class="tosubbtn" @click.stop="toinfo">新增地址</view>

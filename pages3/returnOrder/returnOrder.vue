@@ -71,6 +71,10 @@ export default {
 	onLoad() {
 		this.BASE_IMG = this.$paths.BASE_IMG;
 		this.orderInfo=uni.getStorageSync("orderInfo")
+		if(this.orderInfo.params&&this.orderInfo.params.ordersInfoss){
+			this.orderInfo.orderItems=this.orderInfo.params.ordersInfoss;
+		} 
+		console.log("--",this.orderInfo)
 	},
 	methods: {
 		

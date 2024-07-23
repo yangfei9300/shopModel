@@ -10,7 +10,7 @@
 						<view class="jieshi">订货总金额（元）</view>
 					</view>
 					<view class="colonn allline center_center">
-						<view class="jine">{{info.count}}</view>
+						<view class="jine">{{info.goodCount}}</view>
 						<view class="h-20"></view>
 						<view class="jieshi">订货件数</view>
 					</view>
@@ -32,16 +32,29 @@
 						></image>
 						<view class="w-44"></view>
 						<view class="colonn rowsa h-100">
-							<view class="nichengs">{{item.params.name}}</view>
+							<view class="roww">
+								<view class="nichengs">{{item.params.name}}</view>
+								<view class="w-70"></view>
+								<view class="allline"></view>
+								<view class="dinghuo">件数：</view>
+								<view class="jinee">{{item.goodCount}}</view>
+							</view>
 							<view class="roww">
 								<view class="dinghuo">订货金额：</view>
-								<view class="jinee">￥{{item.params.money}}</view>
+								<view class="jinee">￥{{item.params.totalMmoney}}</view>
 								<view class="w-70"></view>
-								<view class="dinghuo">件数：</view>
-								<view class="jinee">{{item.params.count}}</view>
+								<view class="dinghuo">佣金金额：</view>
+								<view class="jinee">￥{{item.params.money}}</view>
+								
 							</view>
 						</view>
 					</view>
+					
+					<view class="colonn" >
+						<null v-if="yongList.length<=0"></null>
+						<view class="h-250"></view>
+					</view>
+					
 				</scroll-view>
 			</view>
 			
@@ -58,7 +71,7 @@ export default {
 			BASE_IMG:"",
 			info:{
 				'money':0,
-				'count':0
+				'goodCount':0
 			}
 		};
 	},
@@ -80,7 +93,7 @@ export default {
 						var info=this.info;
 						for(var a=0;a<yongList.length;a++){
 							info.money=info.money+yongList[a].params.money;
-							info.count=info.count+yongList[a].params.count;
+							info.goodCount=info.goodCount+yongList[a].goodCount;
 						}
 						this.info=info;
 						this.yongList=yongList;

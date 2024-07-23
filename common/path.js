@@ -68,10 +68,17 @@ const getKickbackhistory =BASE_URL + '/user/getKickbackhistory'
 const getRangehistory =BASE_URL + '/user/getRangehistory'
  // 余额记录
  const getConsumptionHistory =BASE_URL + '/user/getConsumptionHistory'
-    
+// 登录
+ const tooLogin =BASE_URL + '/user/tooLogin'
+// 注册
+ const toRegister =BASE_URL + '/user/toRegister'
+ // 修改密码
+ const updatePassword =BASE_URL + '/user/updatePassword'
  
  
  export default {
+	 updatePassword,
+	 tooLogin,toRegister,
 	 getConsumptionHistory,
 	 getRangehistory,
 	 getKickbackhistory,

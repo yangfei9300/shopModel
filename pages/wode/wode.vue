@@ -3,19 +3,28 @@
 		<view class="colonn">
 			<view class="topview pore">
 				<view class="h-100"></view>
-				<view class="roww" style="padding: 25rpx 36rpx" @click.stop="toPage(11)" v-if="!userInfo">
-					<image src="/static/wd_gr@2x.png" class="w-132 h-132"></image>
+				<view class="roww" style="padding: 25rpx 36rpx" 
+				@click.stop="toPage(13)" v-if="!userInfo">
+					<image src="/static/wd_gr@2x.png" 
+					class="w-132 h-132"></image>
 					<view class="w-30"></view>
 					<view class="colonn h-132 rowsa">
 						<view class="logintxt">登录/注册</view>
 						<view class="loginjiehs">新用户登录后领取福利</view>
 					</view>
 				</view>
-				<view class="roww" style="padding: 25rpx 36rpx" @click.stop="toPage(11)" v-else>
-					<image :src="BASE_IMG + userInfo.avatar" style="border-radius: 50%" class="w-132 h-132"></image>
+				<view class="roww" style="padding: 25rpx 36rpx" 
+				
+				@click.stop="toPage(11)" v-else>
+					<image 
+					v-if="userInfo.avatar"
+					:src="BASE_IMG + userInfo.avatar" 
+					style="border-radius: 50%" class="w-132 h-132"></image>
+					<image src="/static/wd_gr@2x.png" v-else
+					class="w-132 h-132"></image> 
 					<view class="w-30"></view>
 					<view class="colonn h-132 rowsa">
-						<view class="logintxt">{{ userInfo.nickName }}</view>
+						<view class="logintxt">{{ userInfo.nickName?userInfo.nickName:"未完善信息" }}</view>
 						<view class="loginjiehs">此商城实现您的买买买</view>
 					</view>
 				</view>
@@ -117,7 +126,12 @@ export default {
 				{
 					icon: '/static/wd_hh@2x.png',
 					name: '合伙人招募'
-				}
+				},{
+					icon: '/static/xiugaimima.png',
+					name: '修改密码'
+				},
+				
+				
 			],
 			userInfo: null,
 			BASE_IMG: ''
@@ -161,6 +175,7 @@ export default {
 			} else if (index == 11) {
 				uni.navigateTo({
 					url: '/pages2/userInfo/userInfo'
+					// url: '/pages3/login/login'
 				});
 			} else if (index == 12) {
 				uni.navigateTo({
@@ -182,6 +197,18 @@ export default {
 			}else if (index == 5) {
 				uni.navigateTo({
 					url: '/pages1/aboutUs/aboutUs'
+				});
+			}else if (index == 6) {
+				uni.navigateTo({
+					url: '/pages3/kefu/kefu'
+				});
+			}else if (index == 13) {
+				uni.navigateTo({
+					url: '/pages3/login/login'
+				});
+			}else if (index == 9) {
+				uni.navigateTo({
+					url: '/pages3/updatePwd/updatePwd'
 				});
 			}
 		}
